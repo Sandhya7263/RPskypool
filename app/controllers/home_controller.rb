@@ -11,5 +11,8 @@ class HomeController < ApplicationController
   def contactus
     
   end
+  def photo_gallery
+    
+  end
 
 end
