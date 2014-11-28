@@ -8,7 +8,7 @@ class ContactsController < ApplicationController
     else
       flash[:error] = "Error while sending contacts, please try again"
     end
-    redirect_to contact_path
+    redirect_to home_index_path
   end
 
 
