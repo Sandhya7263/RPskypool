@@ -38,34 +38,76 @@
         </h2>
         <hr>
         <p>If you want any support or any thing need to clarify please fill the details to contact us.</p>
-        <form role="form">
+        <%= form_for @contact do |f| %>
           <div class="row">
             <div class="form-group col-lg-4">
               <label>Name</label>
-              <input type="text" class="form-control"/>
+              <%= f.text_field 'name', class: "form-control" %>
+              </div>
+              <div class="form-group col-lg-4">
+                <label>Email Address</label>
+                <%= f.text_field 'email', class: "form-control" %>
+                </div>
+                <div class="form-group col-lg-4">
+                  <label>Phone Number</label>
+                  <%= f.text_field 'phone', class: "form-control" %>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-lg-12">
+                    <label>Message</label>
+                    <%= f.text_area 'message', class: "form-control", :rows=>"6" %>
+                    </div>
+                    <div class="form-group col-lg-12">
+                      <%= f.submit "Submit", class: "btn btn-default" %>
+                      </div>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
             </div>
-            <div class="form-group col-lg-4">
-              <label>Email Address</label>
-              <input type="email" class="form-control"/>
-            </div>
-            <div class="form-group col-lg-4">
-              <label>Phone Number</label>
-              <input type="tel" class="form-control"/>
-            </div>
-            <div class="clearfix"></div>
-            <div class="form-group col-lg-12">
-              <label>Message</label>
-              <textarea class="form-control" rows="6"></textarea>
-            </div>
-            <div class="form-group col-lg-12">
-              <input type="hidden" name="save" value="contact"/>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
-</div>
-<!-- /.container -->
+
+
+          </div>
+          <!-- /.container -->
+
+          <script type="text/javascript">
+            $(function() {
+              $('#new_contact').validate({
+                ignore: [],
+                rules:{
+                  'contact[name]':
+                    {
+                    required: true
+                  },
+                  'contact[email]':{
+                    required: true,
+                    email:true
+                  },
+                  'contact[phone]':{
+                    required: true,
+                    number: true
+                  },
+                  'contact[message]':{
+                    required: true
+                  }
+                },
+                messages:{
+                  'contact[name]':{
+                    required: ("Please enter the name.")
+                  },
+                  'contact[email]':{
+                    required: "Please enter the email.",
+                    email: "Please enter valid email."
+                  },
+                  'contact[phone]':{
+                    required: "Please enter the phone.",
+                    number: "Please enter only numbers."
+                  },
+                  'contact[message]':{
+                    required: "Please enter the message."
+                  }
+                }
+              });
+            });
+          </script>

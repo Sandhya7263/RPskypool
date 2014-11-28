@@ -3,11 +3,11 @@ RpSkypool::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :home
+
   root 'home#index'
   get '/contact' => 'home#contact_us'
   get '/about_us' => 'home#about_us'
   get '/gallery' => 'home#photo_gallery'
-
-
+  resources :contacts
 
 end
