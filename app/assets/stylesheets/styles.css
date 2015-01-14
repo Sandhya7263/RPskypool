@@ -2,7 +2,7 @@
  * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+*/
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -110,6 +110,13 @@ footer {
 footer p {
     margin: 0;
     padding: 50px 0;
+}
+
+
+.error{
+    color: #D8000C;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 @media screen and (min-width:768px) {

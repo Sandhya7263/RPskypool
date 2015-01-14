@@ -8,8 +8,8 @@ class HomeController < ApplicationController
     
   end
 
-  def contactus
-    
+  def contact_us
+    @contact = Contact.new
   end
 
   def photo_gallery
@@ -19,6 +19,8 @@ class HomeController < ApplicationController
   def products
 
   end
+
+
 
 
 end

@@ -48,4 +48,5 @@ gem "therubyracer", '>= 0.11.0beta1', :require => 'v8'
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
+gem "letter_opener", :group => :development
