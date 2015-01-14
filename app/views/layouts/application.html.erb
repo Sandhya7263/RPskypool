@@ -18,8 +18,10 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-      <div class="brand">RP Skypool</div>
-    <div class="address-bar">#45/1 Jakkasandra, Kormangala 1st Block | Bangalore, 516004 | 9916628280/1</div>
+    <div class="brand">
+      <img class="img-responsive logo-img" src="../../assets/logo.jpg" alt=""/>
+    </div>
+    <div class="address-bar"></div>
 
     <!-- Navigation -->
   <nav class="navbar navbar-default" role="navigation">
@@ -42,7 +44,10 @@
             <a href="<%= home_index_path %>">Home</a>
           </li>
           <li>
-            <a href="<%= about_us_path %>">About</a>
+            <a href="<%= products_path %>">Products</a>
+          </li>
+          <li>
+            <a href="<%= services_path %>">Services</a>
           </li>
           <li>
             <a href="<%= gallery_path %>">Photo Gallery</a>
@@ -80,3 +85,12 @@
 
 
 
+<style type="text/css">
+
+  .logo-img{
+    height: 170px;
+
+    width: 350px;
+  }
+
+</style>

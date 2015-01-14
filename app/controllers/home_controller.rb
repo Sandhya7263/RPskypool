@@ -4,15 +4,21 @@ class HomeController < ApplicationController
     
   end
 
-  def aboutus
+  def services
     
   end
 
   def contactus
     
   end
+
   def photo_gallery
     
   end
+  
+  def products
+
+  end
+
 
 end
