@@ -21,8 +21,9 @@
           <strong><a href="mailto:rpc.nsp@gmail.com">rpskypool@gmail.com</a></strong>
         </p>
         <p>Address:
-          <strong>3481 Melrose Place
-            <br />Beverly Hills, CA 90210</strong>
+          <strong>#38/1, Opp sambram college,
+            <br />Vidyaranyapura,
+            <br />Bangalore-560097</strong>
         </p>
       </div>
       <div class="clearfix"></div>
@@ -86,7 +87,8 @@
                   },
                   'contact[phone]':{
                     required: true,
-                    number: true
+                    number: true,
+                    minlength:10
                   },
                   'contact[message]':{
                     required: true
@@ -101,8 +103,10 @@
                     email: "Please enter valid email."
                   },
                   'contact[phone]':{
-                    required: "Please enter the phone.",
-                    number: "Please enter only numbers."
+                    required: "Please enter the mobile number.",
+                    number: "Please enter only numbers.",
+                    minlength: "Please enter the correct mobile number"
+
                   },
                   'contact[message]':{
                     required: "Please enter the message."

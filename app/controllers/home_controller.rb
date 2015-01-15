@@ -4,17 +4,22 @@ class HomeController < ApplicationController
     
   end
 
-  def aboutus
+  def services
     
   end
 
   def contact_us
     @contact = Contact.new
   end
-  
+
   def photo_gallery
     
   end
+  
+  def products
+
+  end
+
 
 
 

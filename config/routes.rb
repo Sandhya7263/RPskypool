@@ -8,6 +8,11 @@ RpSkypool::Application.routes.draw do
   get '/contact' => 'home#contact_us'
   get '/about_us' => 'home#about_us'
   get '/gallery' => 'home#photo_gallery'
+  get '/products' => 'home#products'
+  get '/services' => 'home#services'
+
+
   resources :contacts
+
 
 end
