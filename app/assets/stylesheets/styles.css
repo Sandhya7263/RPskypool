@@ -119,6 +119,23 @@ footer p {
     font-weight: 400;
 }
 
+
+.services ul li {
+    background: url("../assets/tick.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    color: #666;
+    font-size: 15px;
+    line-height: 15px;
+    padding-bottom: 17px;
+    padding-left: 26px;
+}
+
+
+.image-center img {
+    height: 200px !important;
+    width: 240px !important;
+}
+
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -197,3 +214,4 @@ footer p {
         clear: both;
     }
 }
+
