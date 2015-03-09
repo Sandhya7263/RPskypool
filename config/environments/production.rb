@@ -83,7 +83,7 @@ RpSkypool::Application.configure do
   ActionMailer::Base.smtp_settings = {
     :address        => "smtp.sendgrid.net",
     :port           => "587",
-    :authentication => :Plain,
+    :authentication => :plain,
     :user_name      => 'app32007576@heroku.com',
     :password       => '3evf3jiw',
     :domain         => 'heroku.com'
