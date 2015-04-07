@@ -81,12 +81,13 @@ RpSkypool::Application.configure do
   config.action_mailer.default_url_options = {:host => 'frozen-brook-7251.herokuapp.com'}
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
-    :address        => "smtp.sendgrid.net",
-    :port           => "587",
-    :authentication => :plain,
     :user_name      => 'app32007576@heroku.com',
     :password       => '3evf3jiw',
-    :domain         => 'heroku.com'
+    :domain         => 'rpskypool.com',
+    :address        => "smtp.sendgrid.net",
+    :port           => 587,
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
 
 end
