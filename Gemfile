@@ -51,3 +51,4 @@ gem "therubyracer", '>= 0.11.0beta1', :require => 'v8'
 gem 'debugger', group: [:development, :test]
 gem "letter_opener", :group => :development
 gem 'time_diff', '~> 0.3.0'
+gem 'meta-tags'
