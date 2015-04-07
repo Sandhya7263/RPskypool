@@ -80,14 +80,22 @@ RpSkypool::Application.configure do
 
   config.action_mailer.default_url_options = {:host => 'frozen-brook-7251.herokuapp.com'}
   ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :user_name      => 'app32007576@heroku.com',
-    :password       => '3evf3jiw',
-    :domain         => 'rpskypool.com',
-    :address        => "smtp.sendgrid.net",
-    :port           => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
+#  ActionMailer::Base.smtp_settings = {
+#    :user_name      => 'app32007576@heroku.com',
+#    :password       => 'q_eIouq0tBZafPxu4vRbCg',
+#    :domain         => 'rpskypool.com',
+#    :address        => "smtp.mandrillapp.com",
+#    :port           => 587,
+#    :authentication => :plain,
+#    :enable_starttls_auto => true
+#  }
 
+  ActionMailer::Base.smtp_settings = {
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['MANDRILL_USERNAME'],
+    :password =>       ENV['MANDRILL_APIKEY'],
+    :domain =>         'rpskypool.com',
+    :authentication => :plain
+}
 end
