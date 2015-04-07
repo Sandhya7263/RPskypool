@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def customer_info(contact)
     @contact = contact
-    mail(:from => "info@rpskypool.com", :to =>  "rpskypool@gmail.com", :subject => "Customer Enquire")
+    mail(:from => "info@rpskypool.com", :to =>  "rpskypool@gmail.com", :subject => "#{@contact.name}"+"Customer Enquire")
   end
   
 end
