@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
   def create
      @contact = Contact.create(contact_params)
     if @contact.save
-      UserMailer.customer_info(@contact).deliver
+      UserMailer.customer_info(@contact).deliver!
       flash[:notice] = "Successfully created plan"
     else
       flash[:error] = "Error while sending contacts, please try again"
