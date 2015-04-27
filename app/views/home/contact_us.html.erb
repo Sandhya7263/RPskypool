@@ -10,59 +10,7 @@
         <hr/>
       </div>
       <div class="col-md-8">
-        <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-        <iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-      </div>
-      <div class="col-md-4">
-        <h4>Head Office Bangalore</h4>
-        <p>Call us:
-          <strong>+9180 65302828</strong><br />
-          <strong>+91 9916628280</strong><br />
-          <strong>+91 9916628281</strong>
-        </p>
-        <p>Email us:
-          <strong><a href="mailto:rpskypool@gmail.com">rpskypool@gmail.com</a></strong>
-        </p>
-        <p>Reach us :
-          <strong>#446, Railway parallel road,
-            <br />NGEF Layout, Sadanadanagar,
-            <br />Bangalore-560038</strong>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h4>Branch Office Thrissur(Kerala)</h4>
-        <p>
-          <strong>+91 7025170225</strong><br />
-          <strong>+91 7025673223</strong>
-        </p>
-        <p>
-          <strong><a href="mailto:rpskypool.kl@gmail.com">rpskypool.kl@gmail.com</a></strong>
-        </p>
-        <p>
-          <strong>#556,Nooluvally, Chembuchira post,
-            <br /> Kodakarak via, Thrissur-680684</strong>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h4>Branch Office Andhra Pradesh</h4>
-        <p>
-          <strong>+91 9844472608</strong><br />
-          <strong>+91 9916628280</strong>
-        </p>
-        <p>
-          <strong><a href="mailto:rpskypool.ap@gmail.com">rpskypool.ap@gmail.com</a></strong>
-        </p>
-        <p>
-          <strong>Flat No.102, Aarthi nilayam,
-            <br />Gayathrinagar, Jeedimetla,
-            <br />Hyderabad-500032</strong>
-        </p>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-
-  <div class="row">
+        <div class="row">
     <div class="box">
       <div class="col-lg-12">
         <hr/>
@@ -98,6 +46,95 @@
                 </div>
               </div>
             </div>
+
+        <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+        <%#*<iframe width="100%" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>%>
+      </div>
+      <div class="col-md-4">
+        <h4>Head Office Bangalore</h4>
+        <p>Call us:
+          <strong>+9180 65302828</strong><br />
+          <strong>+91 9916628280</strong><br />
+          <strong>+91 9916628281</strong>
+        </p>
+        <p>Email us:
+          <strong><a href="mailto:rpskypool@gmail.com">rpskypool@gmail.com</a></strong>
+        </p>
+        <p>Reach us :
+          <strong>#446, Railway parallel road,
+            <br />NGEF Layout, Sadanadanagar,
+            <br />Bangalore-560038</strong>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h4>Branch Office Thrissur(Kerala)</h4>
+        <p>
+          <strong>+91 7025170225</strong><br />
+          <strong>+91 7025673223</strong>
+        </p>
+        <p>
+          <strong><a href="mailto:rpskypool.kl@gmail.com">rpskypool.kl@gmail.com</a></strong>
+        </p>
+        <p>
+          <strong>#556,Nooluvally, Chembuchira post,
+            <br /> Kodakarak via, Thrissur-680684</strong>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h4>Branch Office Hyderabad</h4>
+        <p>
+          <strong>+91 9844472608</strong><br />
+          <strong>+91 9916628280</strong>
+        </p>
+        <p>
+          <strong><a href="mailto:rpskypool.ap@gmail.com">rpskypool.ap@gmail.com</a></strong>
+        </p>
+        <p>
+          <strong>Flat No.102, Aarthi nilayam,
+            <br />Gayathrinagar, Jeedimetla,
+            <br />Hyderabad-500032</strong>
+        </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <%#*<div class="row">%>
+    <%#*<div class="box">%>
+      <%#*<div class="col-lg-12">%>
+        <%#*<hr/>%>
+        <%#*<h2 class="intro-text text-center">Contact%>
+          <%#*<strong>form</strong>%>
+        <%#*</h2>%>
+        <%#*<hr/>%>
+        <%#*<p>If you want any support or any thing need to clarify please fill the details to contact us.</p>%>
+        <%#= form_for @contact do |f| %>
+          <%#*<div class="row">%>
+            <%#*<div class="form-group col-lg-4">%>
+              <%#*<label>Name</label>%>
+              <%#= f.text_field 'name', class: "form-control" %>
+              <%#*</div>%>
+              <%#*<div class="form-group col-lg-4">%>
+                <%#*<label>Email Address</label>%>
+                <%#= f.text_field 'email', class: "form-control" %>
+                <%#*</div>%>
+                <%#*<div class="form-group col-lg-4">%>
+                  <%#*<label>Phone Number</label>%>
+                  <%#= f.text_field 'phone', class: "form-control" %>
+                  <%#*</div>%>
+                  <%#*<div class="clearfix"></div>%>
+                  <%#*<div class="form-group col-lg-12">%>
+                    <%#*<label>Message</label>%>
+                    <%#= f.text_area 'message', class: "form-control", :rows=>"6" %>
+                    <%#*</div>%>
+                    <%#*<div class="form-group col-lg-12">%>
+                      <%#= f.submit "Submit", class: "btn btn-default" %>
+                      <%#*</div>%>
+                    <%#*</div>%>
+                  <%# end %>
+                <%#*</div>%>
+              <%#*</div>%>
+            <%#*</div>%>
           </div>
           <!-- /.container -->
 
